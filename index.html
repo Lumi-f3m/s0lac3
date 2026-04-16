@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solace Chat</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <main class="app-shell">
+      <section class="card" id="login-card">
+        <h1>Solace</h1>
+        <p class="subtitle">Private chat for friends</p>
+
+        <form id="login-form" class="stack">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" autocomplete="username" required />
+
+          <label for="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            required
+          />
+
+          <button type="submit">Log in</button>
+        </form>
+
+        <p id="login-error" class="error" role="alert"></p>
+      </section>
+
+      <section class="card hidden" id="chat-card" aria-live="polite">
+        <header class="chat-header">
+          <h2>Solace Room</h2>
+          <p id="active-user"></p>
+        </header>
+
+        <ul id="messages" class="messages"></ul>
+
+        <form id="message-form" class="message-form">
+          <input
+            id="message-input"
+            type="text"
+            placeholder="Type a message or paste a game website..."
+            required
+          />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
