@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solace | Auth</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <main class="auth-shell">
+      <section class="auth-card">
+        <h1>Welcome Back!</h1>
+        <p class="subtitle" id="blocker-label">Login</p>
+
+        <form id="login-form" class="stack" autocomplete="off">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" required />
+
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" required />
+
+          <button type="submit">Log in</button>
+        </form>
+
+        <p id="login-error" class="error" role="alert"></p>
+      </section>
+    </main>
+
+    <script src="js/accounts.js"></script>
+    <script src="js/themes.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>

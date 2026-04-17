@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solace | App</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <main class="app-shell">
+      <section class="chat-card">
+        <header class="chat-header">
+          <div>
+            <h1 id="channel-title">Welcome</h1>
+            <p id="active-user"></p>
+          </div>
+          <button id="logout-btn" type="button">Log out</button>
+        </header>
+
+        <h2>Link chat</h2>
+        <ul id="messages" class="messages"></ul>
+
+        <form id="message-form" class="message-form">
+          <input id="message-input" type="text" placeholder="Paste a game link or message" required />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/themes.js"></script>
+    <script src="js/chat.js"></script>
+  </body>
+</html>
